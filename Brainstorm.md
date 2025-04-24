@@ -19,7 +19,7 @@
 
 1) Description: A spiritual productivity app that allows users to count and track their daily duas (supplications), set goals, and build habits around consistent recitation. Users can select from a list of common duas or add their own custom ones.
 
-2) Catagor: Lifestyle
+2) Catagory: Lifestyle
 
 3) Mobile: Mobile is essential for quick and convenient access, especially for on-the-go use during daily prayers or commutes. Push notifications help remind users to complete their daily goals, and widgets can show current counts or streaks on the home screen.
 
