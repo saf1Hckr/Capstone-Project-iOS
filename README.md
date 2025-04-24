@@ -119,17 +119,18 @@ A spiritual productivity app that allows users to count and track their daily du
 - [Home Screen]
   - (GET) Fetch user streaks
   - (GET) Fetch dua counter data
-
-- [Library Screen]
-  - (GET) Load list of duas
-  - (POST) Add dua to user favorites/counter
-
+  - 
 - [Goal Screen]
   - (POST) Save user goal
   - (POST) Set/update notification preferences
-
-- [Audio Player Screen]
-  - (GET) Stream audio from URL
+- [Settings Screen]
+  - (GET) Fetch user settings (account, translation, preferences)  
+  - (POST) Update user settings  
+  - (GET) Load dua history  
+  - (POST) Submit message to support/contact us  
+  - (GET) Get donation options  
+  - (POST) Process donation  
+  - (GET) Fetch audio for selected dua  
 
 - [Share Progress Screen]
   - (POST) Share content to social API (optional)
