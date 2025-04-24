@@ -13,11 +13,10 @@
 
 ### Description
 
-A spiritual productivity app that allows users to count and track their daily duas (supplications), set goals, and build habits around consistent recitation. Users can select from a list of common duas or add their own custom ones.
+A spiritual productivity app that allows users to count and track their daily duas (supplications), set goals, and build habits around consistent recitation. Users can select from a list of common duas or add their own custom ones. Users can select from a list of common duas or add their own custom ones. The app keeps a history of recitations and allows for reminders and streak tracking.
 
 ### App Evaluation
 
-[Evaluation of your app across the following attributes]
 - **Category:** Lifestyle
 - **Mobile:** Mobile is essential for quick and convenient access, especially for on-the-go use during daily prayers or commutes. Push notifications help remind users to complete their daily goals, and widgets can show current counts or streaks on the home screen
 - **Story:** Helps Muslims strengthen their spiritual discipline by consistently remembering Allah through supplications. Whether someone wants to develop a stronger habit of dhikr (remembrance) or track specific duas after prayer, this app becomes a personalized spiritual assistant.
@@ -33,50 +32,78 @@ A spiritual productivity app that allows users to count and track their daily du
 
 ### 1. User Stories (Required and Optional)
 
-**Required Must-have Stories**
+**✅ Required Must-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* As a user, I want to select from a list of common duas, so that I can start counting them right away.  
+* As a user, I want to manually increment my dua counter, so I can keep track of my recitations.  
+* As a user, I want to set daily goals for my dua recitations, so I can build a consistent habit.  
+* As a user, I want to receive reminders throughout the day, so I don’t forget to complete my duas.  
+* As a user, I want to track my daily and weekly streaks, so I can stay motivated and accountable.
 
-**Optional Nice-to-have Stories**
+**✨ Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* As a user, I want to hear audio recitations of each dua, so I can learn correct pronunciation.  
+* As a user, I want to share my streak or progress with friends, so I can inspire others and stay encouraged.
+
+---
 
 ### 2. Screen Archetypes
 
-- [ ] [list first screen here]
-* [list associated required story here]
-* ...
-list second screen here]
-* [list associated required story here]
-* ...
+- [ ] **Home Screen**
+  * Displays user's dua progress, tasbih counter, recent accessed dua, historical dua
+  * Associated with: view dua list, increment counter, can speak
+
+- [ ] **Goals**
+  * Set daily goals and manage goals
+  * Associated with: set daily goals, configure notifications
+     
+- [ ] **Settings** 
+  * General settings like: settings about the account, translation, history. Also, contact us and dontes options
+  * Associated with: listen to dua recitation
+
+- [ ] **Share Progress Screen** (Optional)
+  * Allows users to share progress on social media or with friends
+  * Associated with: share streaks and goals
+
+---
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Home
+* Goals
+* Settings
 
 **Flow Navigation** (Screen to Screen)
 
-- [ ] [list first screen here]
-* [list screen navigation here]
-* ...
-- [ ] [list second screen here]
-* [list screen navigation here]
-* ...
+- [ ] Home Screen
+  * ➝ Tap tasbih counter ➝ Increment count, timer
+  * ➝ Tap Recent Dua ➝ Continue where left off in the the tasbih counter or 
+  * ➝ Browse Historical Dua ➝ Browse to Online For Different Catagories Type Dua
+    
+- [ ] Goals Screen
+  * ➝ Set goal ➝ Save
+
+- [ ] Setting Screen
+  * ➝ Tap any settings will go to that specific settings only.
+  * ➝ Tap to Recent will go to any recent dua or goals that was left off unfinished. 
+  * ➝ Extra Steps like donation and contact can be made. 
+
+---
 
 ## Wireframes
 
-[Add picture of your hand sketched wireframes in this section]
+[Add picture of your hand sketched wireframes in this section]  
 <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+
+---
 
 ### [BONUS] Digital Wireframes & Mockups
 
 ### [BONUS] Interactive Prototype
+
+---
 
 ## Schema 
 
@@ -84,10 +111,30 @@ list second screen here]
 
 ### Models
 
-[Add table of models]
+| Model        | Properties                          |
+|--------------|-------------------------------------|
+| User         | email, password, streakCount, goals |
+| Dua          | text, translation, audioURL         |
+| CounterEntry | duaId, userId, date, count          |
 
 ### Networking
 
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+- [Home Screen]
+  - (GET) Fetch user streaks
+  - (GET) Fetch dua counter data
+
+- [Library Screen]
+  - (GET) Load list of duas
+  - (POST) Add dua to user favorites/counter
+
+- [Goal Screen]
+  - (POST) Save user goal
+  - (POST) Set/update notification preferences
+
+- [Audio Player Screen]
+  - (GET) Stream audio from URL
+
+- [Share Progress Screen]
+  - (POST) Share content to social API (optional)
+
+
