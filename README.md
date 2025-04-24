@@ -106,8 +106,6 @@ A spiritual productivity app that allows users to count and track their daily du
 
 ## Schema 
 
-[This section will be completed in Unit 9]
-
 ### Models
 
 | Model        | Properties                          |
