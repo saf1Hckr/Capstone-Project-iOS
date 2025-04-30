@@ -15,6 +15,11 @@
 
 A spiritual productivity app that allows users to count and track their daily duas (supplications), set goals, and build habits around consistent recitation. Users can select from a list of common duas or add their own custom ones. Users can select from a list of common duas or add their own custom ones. The app keeps a history of recitations and allows for reminders and streak tracking.
 
+### App Preview
+
+[DUA COUNTER](https://drive.google.com/file/d/1e2DlhEhJbgQJxkSFavkmqMfnmLFnr-Us/view?usp=sharing)
+
+
 ### App Evaluation
 
 - **Category:** Lifestyle
